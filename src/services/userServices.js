@@ -17,7 +17,7 @@ const userServices = {
         return await instance.post('/users/login', {
             username: email,
             password
-        }, { withCredentials: true });
+        });
     },
     // get the currently logged in user
     getCurrentUser: async () => {

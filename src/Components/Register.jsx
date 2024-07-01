@@ -15,8 +15,6 @@ const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
 
-    // showToast("test", "success");
-    
     // perform user registration
     userServices.register(name, email, password, location)
       .then(response => {
